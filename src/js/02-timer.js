@@ -46,9 +46,7 @@ flatpickr("#datetime-picker", options = {
   onClose([selectedDates]) {
   userDate = selectedDates;
   
-      if (userDate < Date.now()) {
-      refs.startBtn.setAttribute('disabled', true);
-          
+      if (userDate < Date.now()) {     
      return Notify.failure("Please choose a date in the future");;
      };
   
