@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d3761e43e54f815b587926d60405fe140b0b682
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 Notify.init({ cssAnimationStyle: 'from-top', fontAwesomeIconStyle: 'shadow' });
 
