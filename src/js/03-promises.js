@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 9d3761e43e54f815b587926d60405fe140b0b682
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 Notify.init({ cssAnimationStyle: 'from-top', fontAwesomeIconStyle: 'shadow' });
 
 const refs = {
   form: document.querySelector('.form'),
-  // startDelay:document.querySelector('input[name = "delay"]'),
-  // step:document.querySelector('input[name = "step"]'),
-  // amount:document.querySelector('input[name = "amount"]'),
+  startDelay:document.querySelector('input[name = "delay"]'),
+  step:document.querySelector('input[name = "step"]'),
+  amount:document.querySelector('input[name = "amount"]'),
 };
 
 refs.form.addEventListener('submit', onFormSubmit);
