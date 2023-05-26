@@ -38,7 +38,7 @@ timer.start();
 
 refs.startBtn.setAttribute('disabled', true);
 
-flatpickr("#datetime-picker", options = {
+flatpickr("#datetime-picker", {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),

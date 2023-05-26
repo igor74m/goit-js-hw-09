@@ -7,15 +7,18 @@ const startBtn = document.querySelector('[data-start]');
 const stopBtn = document.querySelector('[data-stop]');
 
 let intervalId = null;
+stopBtn.setAttribute('disabled', true);  
   
 startBtn.addEventListener('click', () => {
   intervalId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
-startBtn.setAttribute('disabled', true);  
+  startBtn.setAttribute('disabled', true);  
+   stopBtn.removeAttribute('disabled');
 });
 
 stopBtn.addEventListener('click', () => {
   clearInterval(intervalId);
   startBtn.removeAttribute('disabled');
+  stopBtn.setAttribute('disabled', true); 
 });
