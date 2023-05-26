@@ -63,7 +63,9 @@ const timer = {
      start() {
     if (this.isActiv) {
       return;
-    };
+       };
+       
+       refs.input.setAttribute('disabled', true);
    
      const intervalId = setInterval(() => {
      const startTime = Date.now();
